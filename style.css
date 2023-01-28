@@ -1,0 +1,298 @@
+body {
+    background: linear-gradient(#9E6AE0, #F07591);
+    font-family: 'sora', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    padding: none;
+    margin: 0;
+}
+
+
+header {
+
+    width: 90%;
+    max-width: 1400px;
+    margin: 10px auto;
+    height: 80px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 1.5em;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.page-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+}
+
+.hero {
+
+    width: 90%;
+    max-width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+    z-index: 0;
+}
+
+h1 {
+    font-family: Sora;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.3em;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+h1 em {
+    color: #54EDA3;
+    font-style: normal;
+}
+
+h3 {
+
+    font-weight: 700px;
+}
+
+.download-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-bottom: 19px;
+
+}
+
+.download {
+    width: auto;
+    min-width: 189px;
+    height: 54.74px;
+}
+
+.hero-content {
+    height: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1em;
+    justify-content: space-evenly;
+    justify-content:
+
+}
+
+h5 {
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 400;
+}
+
+.download-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*slider animation*/
+.slide_out {
+    animation: 15s ease-in-out 2s infinite both slide ;
+}
+ 
+@keyframes slide {
+0%{
+    transform: translate(0);
+}
+
+10%{
+transform: translateX(-45%);
+}
+
+20%{
+transform: translateX(-45%);
+}
+
+30%{
+transform: translateX(-90%);
+}
+
+
+40%{
+transform: translateX(-90%);
+}
+}
+
+/*slider animation*/
+
+.hero-text {
+    max-width: 600px;
+    background-color: #54eda329;
+}
+
+.slide_container {
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+    justify-content: space-between;
+}
+.slide-frame {
+    width: 50vw;
+    border: 2px white;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.hero-image {
+    height: 90vh;
+    max-height: 800px;
+    width: auto;
+    bottom: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 0%;
+    right: 20%;
+
+
+}
+
+.screenshot {
+
+    width: auto;
+    height: 85vh;
+    max-height: 800px;
+    min-height: 500px;
+    position: absolute;
+    right: 15%;
+    bottom: 2%;
+    z-index: 5;
+
+}
+
+.footer {
+
+    width: 100vw;
+    height: 10%;
+    background-color: #0F1E50;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+}
+
+.brand-logos {
+    width: 90%;
+    max-width: 1350px;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+
+@media (max-width: 1080px) {
+    .screenshot {
+        right: -10%;
+    }
+
+    .hero-image {
+        position: absolute;
+        right: 20%;
+        opacity: 50%;
+        z-index: -1;
+    }
+
+    .footer {
+        justify-items: center;
+        display: flex;
+    }
+
+    .brand-logos {
+        gap: 1.5em;
+        width: 80%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 900px) {
+    .screenshot {
+        opacity: 0%;
+    }
+
+    .hero-image {
+        position: absolute;
+        right: 8%;
+        opacity: 50%;
+        z-index: -1;
+    }
+
+    .footer {
+        display: none;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .screenshot {
+        opacity: 0%;
+    }
+
+    .hero-image {
+        position: absolute;
+        opacity: 50%;
+        z-index: -1;
+        right: 0%;
+    }
+
+    h1 {
+        max-width: 320px;
+    }
+
+    h3 {
+        max-width: 330px;
+    }
+.download-buttons {
+    flex-direction: column;
+    gap: 10px;
+}
+
+}
+
+
+@media (max-width: 600px) {
+    .screenshot {
+        opacity: 0%;
+    }
+
+    .hero-image {
+        position: absolute;
+        opacity: 50%;
+        z-index: -1;
+        right: 0%;
+    }
+
+    .footer {
+        display: none;
+    }
+
+}
