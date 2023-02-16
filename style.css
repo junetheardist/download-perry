@@ -78,7 +78,7 @@ h3 {
 }
 
 .download-buttons {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     gap: 10px;
     margin-bottom: 19px;
