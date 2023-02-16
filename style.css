@@ -1,6 +1,5 @@
 body {
-    /* background: linear-gradient(#9E6AE0, #F07591); */
-    background-color: #F07591;
+   background: linear-gradient(#9E6AE0, #F07591), #F07591;
     font-family: 'sora', sans-serif;
     height: 100vh;
     overflow: hidden;
@@ -93,15 +92,13 @@ h3 {
 }
 
 .hero-content {
-    height: 100%;
+    height: 85%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
     color: white;
     gap: 1em;
     justify-content: space-evenly;
-
-
 }
 
 h5 {
