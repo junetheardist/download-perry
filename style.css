@@ -5,6 +5,7 @@ body {
     overflow: hidden;
     padding: none;
     margin: 0;
+    position: relative;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -56,7 +57,67 @@ a {
     margin-bottom: 0px;
     padding-bottom: 0%;
     z-index: 0;
+    position: relative;
 }
+
+.popup {
+    position: absolute;
+    background-color: rgba(21, 21, 21, 0.221);
+    color: hsl(53, 0%, 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+     
+    visibility: hidden;
+ }
+ .popup button {
+    position: relative;
+    right: -95%;
+    top: 3%;
+    width: fit-content;
+    border: none;
+   background-color: #ffffff00;
+   cursor: pointer;
+
+ }
+ .popup div {
+    background-color: #E5EAFB;
+    width: fit-content;
+    height: fit-content;
+    min-height: 450px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    box-shadow: 0px 20px 20px  rgba(49, 49, 51, 0.2);
+    font-size: 1.2rem;
+    padding-bottom: 40px;
+    margin: 10%;
+
+ }
+ .popup p {
+    max-width: 60ch;
+    margin: 5px 10%;
+    
+ }
+ .popup h3 {
+    max-width: 60ch;
+    margin: 20px 10%;
+    font-size: 1.5rem;
+    
+ }
+
+.showPopup {
+
+    visibility: visible;
+}
+
 
 h1 {
     font-family: Sora;
@@ -65,6 +126,7 @@ h1 {
     line-height: 1.3em;
     letter-spacing: 0em;
     text-align: left;
+    max-width: 20ch;
 }
 
 h1 em {
@@ -74,6 +136,7 @@ h1 em {
 
 h3 {
     font-weight: 700px;
+    max-width: 35ch;
 }
 
 .download-buttons {
@@ -101,11 +164,23 @@ h3 {
     position: relative;
     left: 5%;
 }
+.hero-content button {
+
+    background-color: #ffffff00;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
 
 h5 {
     margin-bottom: 10px;
     color: white;
     font-weight: 400;
+    font-size: 1rem;
 }
 
 .download-container {
@@ -175,7 +250,7 @@ h5 {
     width: 50vw;
     /* border: 2px white; */
     /* background-color: #9E6AE0; */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* box-sizing: border-box; */
 }
 
@@ -187,7 +262,7 @@ h5 {
     margin-bottom: 0px;
     position: relative;
     bottom: 0%;
-    right: 20%;
+    right: 15%;
 
 
 }
@@ -199,7 +274,7 @@ h5 {
     max-height: 800px;
     min-height: 500px;
     position: absolute;
-    right: 10%;
+    right: 11%;
     bottom: 2%;
     z-index: 5;
 
